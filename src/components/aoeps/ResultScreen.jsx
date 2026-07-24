@@ -81,8 +81,7 @@ const resultConfigs = {
     actionDescription: 'Évaluation par un professionnel recommandée',
     resources: [
       { name: '3114 - Prévention du suicide', number: '3114', primary: true },
-      { name: 'C. Simons - UCRM', email: 'c.simons@ucrm.fr', description: 'Évaluatrice de crise suicidaire' },
-      { name: 'S. Mercier - UCRM', number: '0763718607', email: 's.mercier@ucrm.fr', description: 'Évaluatrice de crise suicidaire' },
+     { name: 'S. Mercier', number: 'à définir', email: 'à définir', description: 'Évaluatrice de crise suicidaire' },
       { name: 'Médecin traitant', description: 'Prise de rendez-vous' },
       { name: 'Psychologue', description: 'Suivi psychologique' }
     ]
