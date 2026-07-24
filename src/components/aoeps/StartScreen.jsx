@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { AlertTriangle, Shield, Clock, Phone } from 'lucide-react';
-import UcrmLogo from './UcrmLogo';
+import AppLogo from './AppLogo';
 
 export default function StartScreen({ onStart }) {
   return (
     <div className="space-y-6">
-      {/* Logo UCRM */}
-      <UcrmLogo className="justify-center" />
+      {/* AppLogo */}
+      <AppLogo className="justify-center" />
       
       {/* Header */}
       <div className="text-center space-y-4">
