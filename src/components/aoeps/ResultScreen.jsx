@@ -131,8 +131,7 @@ const resultConfigs = {
     resources: [
       { name: '3114 - Prévention du suicide', number: '3114', primary: true },
       { name: 'Application Hop Ma Liste', description: 'Identifier ressources et activités positives', link: 'https://hopmaliste.fr' },
-      { name: 'C. Simons - PCMS', email: 'c.simons@ucrm.fr', description: 'Évaluatrice de crise suicidaire' },
-      { name: 'S. Mercier - PCMS', number: '0763718607', email: 's.mercier@ucrm.fr', description: 'Évaluatrice de crise suicidaire' },
+        { name: 'S. Mercier', number: 'à définir', email: 'à définir', description: 'Évaluatrice de crise suicidaire' },
       { name: 'Médecin généraliste', description: 'Évaluation et suivi médical' },
       { name: 'Psychologue', description: 'Suivi psychologique préventif' },
       { name: 'Associations locales', description: 'Activités et lien social' }
