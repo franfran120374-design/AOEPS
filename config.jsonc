@@ -1,0 +1,9 @@
+{
+  "name": "AOEPS : Aide D\u00e9cisionnelle",
+  "site": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev",
+    "outputDirectory": "./dist"
+  }
+}
