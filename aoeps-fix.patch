@@ -1,0 +1,136 @@
+diff --git a/src/components/aoeps/AppLogo.jsx b/src/components/aoeps/AppLogo.jsx
+new file mode 100644
+index 0000000..d98d06c
+--- /dev/null
++++ b/src/components/aoeps/AppLogo.jsx
+@@ -0,0 +1,13 @@
++// Placeholder en attendant le logo définitif de Sandra Mercier
++export default function AppLogo({ className = "" }) {
++  return (
++    <div className={`flex items-center gap-2 ${className}`}>
++      <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-white text-xs font-bold">
++        AO
++      </div>
++      <span className="text-sm font-semibold tracking-wide text-slate-700">
++        AOEPS
++      </span>
++    </div>
++  );
++}
+diff --git a/src/components/aoeps/DistressAssessment.jsx b/src/components/aoeps/DistressAssessment.jsx
+index 6d6e9dc..bfa9211 100644
+--- a/src/components/aoeps/DistressAssessment.jsx
++++ b/src/components/aoeps/DistressAssessment.jsx
+@@ -2,7 +2,7 @@ import React, { useState } from 'react';
+ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+ import { Button } from '@/components/ui/button';
+ import { Heart, ChevronLeft, ChevronRight } from 'lucide-react';
+-import UcrmLogo from './UcrmLogo';
++import AppLogo from './AppLogo';
+ 
+ const questions = [
+   {
+@@ -58,8 +58,8 @@ export default function DistressAssessment({ onComplete }) {
+ 
+   return (
+     <div className="space-y-6">
+-      {/* Logo UCRM */}
+-      <UcrmLogo />
++      {/* Logo (placeholder) */}
++      <AppLogo />
+       
+       {/* Progress */}
+       <div className="space-y-2">
+diff --git a/src/components/aoeps/InitialScreening.jsx b/src/components/aoeps/InitialScreening.jsx
+index 1f7afbe..a625a2b 100644
+--- a/src/components/aoeps/InitialScreening.jsx
++++ b/src/components/aoeps/InitialScreening.jsx
+@@ -2,7 +2,7 @@ import React from 'react';
+ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+ import { Button } from '@/components/ui/button';
+ import { HelpCircle, ArrowRight } from 'lucide-react';
+-import UcrmLogo from './UcrmLogo';
++import AppLogo from './AppLogo';
+ 
+ export default function InitialScreening({ onAnswer }) {
+   const options = [
+@@ -34,8 +34,8 @@ export default function InitialScreening({ onAnswer }) {
+ 
+   return (
+     <div className="space-y-6">
+-      {/* Logo UCRM */}
+-      <UcrmLogo />
++      {/* Logo (placeholder) */}
++      <AppLogo />
+       
+       {/* Progress */}
+       <div className="flex items-center justify-between text-sm text-slate-500">
+diff --git a/src/components/aoeps/ResultScreen.jsx b/src/components/aoeps/ResultScreen.jsx
+index 861228b..7397022 100644
+--- a/src/components/aoeps/ResultScreen.jsx
++++ b/src/components/aoeps/ResultScreen.jsx
+@@ -13,7 +13,7 @@ import {
+   Stethoscope,
+   MessageCircle
+ } from 'lucide-react';
+-import UcrmLogo from './UcrmLogo';
++import AppLogo from './AppLogo';
+ 
+ const resultConfigs = {
+   urgence_absolue: {
+@@ -156,8 +156,8 @@ export default function ResultScreen({ resultType, onReset }) {
+ 
+   return (
+     <div className="space-y-6">
+-      {/* Logo UCRM */}
+-      <UcrmLogo />
++      {/* Logo (placeholder) */}
++      <AppLogo />
+       
+       {/* Result Header */}
+       <Card className={`border-0 shadow-xl overflow-hidden ${config.bgClass}`}>
+diff --git a/src/components/aoeps/RiskAssessment.jsx b/src/components/aoeps/RiskAssessment.jsx
+index 3d48207..34f2f3e 100644
+--- a/src/components/aoeps/RiskAssessment.jsx
++++ b/src/components/aoeps/RiskAssessment.jsx
+@@ -2,7 +2,7 @@ import React, { useState } from 'react';
+ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+ import { Button } from '@/components/ui/button';
+ import { AlertTriangle, ChevronLeft, ChevronRight } from 'lucide-react';
+-import UcrmLogo from './UcrmLogo';
++import AppLogo from './AppLogo';
+ 
+ const questions = [
+   {
+@@ -71,8 +71,8 @@ export default function RiskAssessment({ onComplete }) {
+ 
+   return (
+     <div className="space-y-6">
+-      {/* Logo UCRM */}
+-      <UcrmLogo />
++      {/* Logo (placeholder) */}
++      <AppLogo />
+       
+       {/* Progress */}
+       <div className="space-y-2">
+diff --git a/src/components/aoeps/StartScreen.jsx b/src/components/aoeps/StartScreen.jsx
+index dbba1cb..c637902 100644
+--- a/src/components/aoeps/StartScreen.jsx
++++ b/src/components/aoeps/StartScreen.jsx
+@@ -2,13 +2,13 @@ import React from 'react';
+ import { Button } from '@/components/ui/button';
+ import { Card, CardContent, CardHeader } from '@/components/ui/card';
+ import { AlertTriangle, Shield, Clock, Phone } from 'lucide-react';
+-import UcrmLogo from './UcrmLogo';
++import AppLogo from './AppLogo';
+ 
+ export default function StartScreen({ onStart }) {
+   return (
+     <div className="space-y-6">
+-      {/* Logo UCRM */}
+-      <UcrmLogo className="justify-center" />
++      {/* Logo (placeholder) */}
++      <AppLogo className="justify-center" />
+       
+       {/* Header */}
+       <div className="text-center space-y-4">
