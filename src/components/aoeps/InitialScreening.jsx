@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { HelpCircle, ArrowRight } from 'lucide-react';
-import UcrmLogo from './UcrmLogo';
+import AppLogo from './AppLogo';
 
 export default function InitialScreening({ onAnswer }) {
   const options = [
@@ -35,7 +35,7 @@ export default function InitialScreening({ onAnswer }) {
   return (
     <div className="space-y-6">
       {/* Logo UCRM */}
-      <UcrmLogo />
+     <AppLogo />
       
       {/* Progress */}
       <div className="flex items-center justify-between text-sm text-slate-500">
