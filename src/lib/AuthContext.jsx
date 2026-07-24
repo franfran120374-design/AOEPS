@@ -17,7 +17,17 @@ export const AuthProvider = ({ children }) => {
     checkAppState();
   }, []);
 
-  const checkAppState = async () => {
+const checkAppState = async () => {
+    // Pas de config Base44 (appId/serverUrl absents) => app en standalone,
+    // hors plateforme Base44. On ne bloque pas le rendu derrière un appel
+    // réseau qui échouera de toute façon (voir appParams / VITE_BASE44_*).
+    if (!appParams.appId || !appParams.serverUrl) {
+      setIsLoadingPublicSettings(false);
+      setIsLoadingAuth(false);
+      setIsAuthenticated(false);
+      return;
+    }
+
     try {
       setIsLoadingPublicSettings(true);
       setAuthError(null);
