@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { AlertTriangle, ChevronLeft, ChevronRight } from 'lucide-react';
-import UcrmLogo from './UcrmLogo';
+import AppLogo from './AppLogo';
 
 const questions = [
   {
@@ -71,8 +71,8 @@ export default function RiskAssessment({ onComplete }) {
 
   return (
     <div className="space-y-6">
-      {/* Logo UCRM */}
-      <UcrmLogo />
+      {/* AppLogo */}
+      <AppLogo />
       
       {/* Progress */}
       <div className="space-y-2">
