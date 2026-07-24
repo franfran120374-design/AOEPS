@@ -1,0 +1,9 @@
+{
+  "name": "AOEPS - Aide Décisionnelle",
+  "short_name": "AOEPS",
+  "start_url": "/AOEPS/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "icons": []
+}
