@@ -74,7 +74,7 @@ function App() {
         <Router>
           <NavigationTracker />
           <AuthenticatedApp />
-        </Router>
+        <Router basename={import.meta.env.BASE_URL}>
         <Toaster />
         <VisualEditAgent />
       </QueryClientProvider>
