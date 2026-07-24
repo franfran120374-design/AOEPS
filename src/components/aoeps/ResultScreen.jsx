@@ -13,7 +13,7 @@ import {
   Stethoscope,
   MessageCircle
 } from 'lucide-react';
-import UcrmLogo from './UcrmLogo';
+import AppLogo from './AppLogo';
 
 const resultConfigs = {
   urgence_absolue: {
@@ -156,8 +156,8 @@ export default function ResultScreen({ resultType, onReset }) {
 
   return (
     <div className="space-y-6">
-      {/* Logo UCRM */}
-      <UcrmLogo />
+      {/* AppLogo */}
+     <AppLogo />
       
       {/* Result Header */}
       <Card className={`border-0 shadow-xl overflow-hidden ${config.bgClass}`}>
